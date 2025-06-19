@@ -1,25 +1,23 @@
 HireBoard – Job Search & Bookmarking App
 
-A modern and responsive job search board built with Next.js, TypeScript, and TailwindCSS
+A modern and responsive job search board built with Next.js.
 
 Live Demo : https://job-search-dashboard-zeta.vercel.app
 
 Features
 
-- 🔍 Search by keyword, location, or tags**
-- 📌 Bookmark jobs** – stored using localStorage
-- 🧾 Drawer panel** to view all bookmarked jobs
-- 📄 Responsive job cards** with subtle animations
+- 🔍 Search by keyword or location
+- 📌 Bookmark jobs – stored using localStorage
+- 🧾 Drawer panel to view all bookmarked jobs
+- 📄 Responsive job cards with subtle animations
 - 🗂️ Pagination** – 10 jobs per page (40+ jobs total)
-- 🌙 Dark theme** – mobile, tablet & desktop optimized
-- 🔍 SEO-friendly** listing pages for better visibility
+- 🔍 SEO-friendly listing pages for better visibility
 
 🛠 Tech Stack
 
-- Next.js 15+ (App Router)**
-- TypeScript**
--  Tailwind CSS**
-- ES6 JavaScript**
+- Next.js
+- TypeScript
+- Tailwind CSS
 - Deployed on Vercel
 
 🤖 Built with AI Assistance
@@ -28,9 +26,8 @@ This project was created with the help of Cursor AI, an AI-first code editor tha
 
 📦 Getting Started
 
-```bash
 # Clone the repo
-git clone https://github.com/yourusername/hireboard.git
+git clone repo url
 
 # Install dependencies
 npm install
