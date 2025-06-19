@@ -26,11 +26,11 @@ This project was created with the help of Cursor AI, an AI-first code editor tha
 
 ## 📦 Getting Started
 
-- Clone the repo
+Clone the repo : 
 git clone repo url
 
-- Install dependencies
+Install dependencies : 
 npm install
 
-- Run locally
+Run locally : 
 npm run dev
