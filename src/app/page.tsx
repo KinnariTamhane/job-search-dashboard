@@ -12,7 +12,6 @@ export default function Home() {
   // Search and pagination state
   const [search, setSearch] = useState("");
   const [location, setLocation] = useState("");
-  const [tag, setTag] = useState("");
   const [page, setPage] = useState(1);
   // Bookmark drawer state
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -21,11 +20,6 @@ export default function Home() {
 
   // Filter jobs
   const filteredJobs = useMemo(() => {
-    // Parse tag input into an array of trimmed, lowercased tags
-    const tagList = tag
-      .split(/[, ]+/)
-      .map((t) => t.trim().toLowerCase())
-      .filter((t) => t.length > 0);
     return allJobs.filter((job) => {
       const matchesSearch =
         search === "" ||
@@ -35,15 +29,9 @@ export default function Home() {
       const matchesLocation =
         location === "" ||
         job.location.toLowerCase().includes(location.toLowerCase());
-      // Multi-tag search: all entered tags must be present in job.tags
-      const matchesTag =
-        tagList.length === 0 ||
-        tagList.every((inputTag) =>
-          job.tags.some((jobTag) => jobTag.toLowerCase() === inputTag)
-        );
-      return matchesSearch && matchesLocation && matchesTag;
+      return matchesSearch && matchesLocation;
     });
-  }, [search, location, tag]);
+  }, [search, location]);
 
   // Pagination
   const totalPages = Math.ceil(filteredJobs.length / JOBS_PER_PAGE);
@@ -68,16 +56,13 @@ export default function Home() {
       <Header
         search={search}
         location={location}
-        tag={tag}
         setSearch={setSearch}
         setLocation={setLocation}
-        setTag={setTag}
         onOpenDrawer={() => setDrawerOpen(true)}
         bookmarksCount={bookmarks.length}
         onResetFilters={() => {
           setSearch("");
           setLocation("");
-          setTag("");
           setPage(1);
         }}
       />
@@ -89,7 +74,6 @@ export default function Home() {
           onResetFilters={() => {
             setSearch("");
             setLocation("");
-            setTag("");
             setPage(1);
           }}
         />
