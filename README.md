@@ -4,7 +4,7 @@ A modern and responsive job search board built with Next.js.
 
 Live Demo : https://job-search-dashboard-zeta.vercel.app
 
-## Features
+## ✨ Features
 
 - 🔍 Search by keyword or location
 - 📌 Bookmark jobs – stored using localStorage
