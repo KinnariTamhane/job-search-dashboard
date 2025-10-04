@@ -1,4 +1,4 @@
-## HireBoard – Job Search & Bookmarking App
+## 💼 HireBoard – Job Search & Bookmarking App
 
 A modern and responsive job search board built with Next.js.
 
