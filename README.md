@@ -20,10 +20,6 @@ Live Demo : https://job-search-dashboard-zeta.vercel.app
 - Tailwind CSS
 - Deployed on Vercel
 
-## 🤖 Built with AI Assistance
-
-This project was created with the help of Cursor AI, an AI-first code editor that accelerated development through code generation, refactoring, and debugging suggestions.
-
 ## 📦 Getting Started
 
 Clone the repo : 
