@@ -10,7 +10,7 @@ Live Demo : https://job-search-dashboard-zeta.vercel.app
 - 📌 Bookmark jobs – stored using localStorage
 - 🧾 Drawer panel to view all bookmarked jobs
 - 📄 Responsive job cards with subtle animations
-- 🗂️ Pagination** – 10 jobs per page (40+ jobs total)
+- 🗂️ Pagination – 10 jobs per page (40+ jobs total)
 - 🔍 SEO-friendly listing pages for better visibility
 
 ## 🛠 Tech Stack
